@@ -79,6 +79,30 @@ listen_addresses = '*'
 restart the server
 
 
+# some useful commands
+
+Create user and give permissions of a db to that user:
+
+    CREATE DATABASE db;
+    CREATE USER user WITH PASSWORD 'pass';
+    GRANT ALL PRIVILEGES ON DATABASE db TO user;
+
+    ALTER USER user SET search_path = public;
+
+
+list all users on postgres:
+
+    \du
+
+list all databases on postgres:
+
+     \l
+
+or
+
+     \l+
+
+
 # References
 
 [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04)
