@@ -17,7 +17,7 @@ First get updates for os, install python 3.8 and python 3.8 venv
 
 Using following code, create a python 3.8 venv and then activate it
 
-    python38 -m venv django_env_38
+    python3.8 -m venv django_env_38
     source django_env_38/bin/activate
 
 
